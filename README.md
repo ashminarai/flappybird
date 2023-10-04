@@ -1,7 +1,5 @@
 # Flappy Bird Game 🐦
 
-![Flappy Bird Logo](/images/flappy-bird-logo.png)
-
 ## Table of Contents 📚
 
 - [Introduction](#introduction)
@@ -45,7 +43,7 @@ To run the game locally, follow these steps:
 3. Install the dependencies:
    npm install
 
-**Usage 🚀**
+## Usage 🚀
 
 Start the game:
 
