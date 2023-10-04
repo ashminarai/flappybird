@@ -50,7 +50,7 @@ Start the game:
 npm start
 Open your web browser and access the game at http://localhost:3000
 
-**Contributing 🤝**
+## Contributions 🤝
 
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
