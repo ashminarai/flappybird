@@ -6,7 +6,7 @@ const BIRD_HEIGHT = 28;
 const BIRD_WIDTH = 33;
 const WALL_HEIGHT = 600;
 const WALL_WIDTH = 400;
-const GRAVITY = 8;
+const GRAVITY = 2; // Adjusted gravity for smoother movement
 const OBJ_WIDTH = 52;
 const OBJ_SPEED = 6;
 const OBJ_GAP = 200;
@@ -14,7 +14,7 @@ const OBJ_GAP = 200;
 function App() {
   // State variables for game control
   const [isStart, setIsStart] = useState(false);
-  const [birdpos, setBirspos] = useState(300);
+  const [birdpos, setBirdPos] = useState(100);
   const [objHeight, setObjHeight] = useState(0);
   const [objPos, setObjPos] = useState(WALL_WIDTH);
   const [score, setScore] = useState(0);
@@ -22,13 +22,13 @@ function App() {
   // Update bird's position based on gravity
   useEffect(() => {
     let intVal;
-    if (isStart && birdpos < WALL_HEIGHT - BIRD_HEIGHT) {
+    if (isStart) {
       intVal = setInterval(() => {
-        setBirspos((birdpos) => birdpos + GRAVITY);
+        setBirdPos((birdpos) => birdpos + GRAVITY);
       }, 24);
     }
     return () => clearInterval(intVal);
-  }, [isStart, birdpos]);
+  }, [isStart]);
 
   // Move the obstacle and update score
   useEffect(() => {
@@ -62,21 +62,16 @@ function App() {
       (topObj || bottomObj)
     ) {
       setIsStart(false);
-      setBirspos(300);
+      setBirdPos(300);
       setScore(0);
     }
   }, [isStart, birdpos, objHeight, objPos]);
 
   // Click handler to start game or flap bird
-  // const handler = () => {
-  //   if (!isStart) setIsStart(true);
-  //   else if (birdpos < BIRD_HEIGHT) setBirspos(0);
-  //   else setBirspos((birdpos) => birdpos - 50);
-  // };
   const handler = () => {
-  if (!isStart) setIsStart(true);
-  else setBirspos((birdpos) => birdpos - 75); // Move the bird upwards
-};
+    if (!isStart) setIsStart(true);
+    else setBirdPos((birdpos) => birdpos - 50); // Move the bird upwards when clicked
+  };
 
   return (
     <Home onClick={handler}>
@@ -126,7 +121,6 @@ const Background = styled.div`
   position: relative;
   overflow: hidden;
   border: 2px solid black;
-
 `;
 
 const Bird = styled.div`
