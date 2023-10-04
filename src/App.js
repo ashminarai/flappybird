@@ -1,44 +1,5 @@
-// import "./App.css";
-// import styled from "styled-components";
-// const WALL_HEIGHT = 600;
-// const WALL_WIDTH = 400;
-
-// function App() {
-//   return
-//   <Home>
-//     <Background height={WALL_HEIGHT} width={WALL_WIDTH}>
-//       <Bird />
-//     </Background>
-//   </Home>;
-// }
-
-// export default App;
-
-// const Home = styled.div`
-//   height: 100vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// `;
-// // const Background = styled.div`
-// //   background-image: url("./images/background-day.png");
-// //   background-repeat: no-repeat;
-// //   background-size: ${props => props.width}px ${props => props.height}px;
-// //   width: ${props => props.width}px;
-// //   height: ${props => props.height}px;
-// // `;
-
-// const Background = styled.div`
-//   background-image: url("/images/background-day.png");
-//   background-repeat: no-repeat;
-//   background-size: ${props => props.width}px ${props => props.height}px;
-//   width: ${props => props.width}px;
-//   height: ${props => props.height}px;
-// `;
-
-// const Bird = styled.div``;
-
 import "./App.css";
+import React, {useState} from "react";
 import styled from "styled-components";
 
 const WALL_HEIGHT = 600;
@@ -48,10 +9,11 @@ const BIRD_WIDTH = 33;
 const BIRD_HEIGHT = 28;
 
 function App() {
+  const [birdposition, setBirdposition] = useState(200)
   return (
     <Home>
       <Background height={WALL_HEIGHT} width={WALL_WIDTH}>
-        <Bird height={BIRD_HEIGHT} width={BIRD_WIDTH} top={300}/>
+        <Bird height={BIRD_HEIGHT} width={BIRD_WIDTH} top={birdposition} left={100}/>
       </Background>
     </Home>
   );
@@ -84,5 +46,5 @@ const Bird = styled.div`
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
   top:${(props) => props.top}px;
-  left: 100px;
+  left: ${(props) => props.left}px;
 `;
