@@ -1,5 +1,5 @@
 import "./App.css";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import styled from "styled-components";
 
 const WALL_HEIGHT = 600;
@@ -8,8 +8,23 @@ const WALL_WIDTH = 400;
 const BIRD_WIDTH = 33;
 const BIRD_HEIGHT = 28;
 
+const GRAVITY = 5;
 function App() {
-  const [birdposition, setBirdposition] = useState(200)
+
+  const [birdposition, setBirdposition] = useState(200);
+  
+  useEffect(() =>{
+    
+    let birdval;
+
+    if (birdposition < WALL_HEIGHT - BIRD_HEIGHT){
+      birdval = setInterval(() =>{
+        setBirdposition((birdposition) => birdposition + GRAVITY);
+      },24)
+    }
+    return () => clearInterval(birdval);
+    
+  })
   return (
     <Home>
       <Background height={WALL_HEIGHT} width={WALL_WIDTH}>
