@@ -18,7 +18,7 @@ Welcome to the Flappy Bird Game repository! This is a classic remake of the famo
 
 ![Flappy Bird Gameplay](/images/gameplay.gif)
 
-You can play the game online here flappybird-eight.vercel.app.
+You can play the game online [here](flappybird-eight.vercel.app).
 
 ## Features 🌟
 
