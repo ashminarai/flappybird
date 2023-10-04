@@ -18,7 +18,7 @@ Welcome to the Flappy Bird Game repository! This is a classic remake of the famo
 
 ![Flappy Bird Gameplay](/images/gameplay.gif)
 
-You can play the game online [here](https://your-game-url.com).
+You can play the game online here flappybird-eight.vercel.app.
 
 ## Features 🌟
 
@@ -59,7 +59,8 @@ Create a new branch for your feature: git checkout -b feature-name
 Make your changes and commit them: git commit -m 'Add new feature'
 Push your changes to your forked repository: git push origin feature-name
 Create a pull request.
-License 📝
+
+## License 📝
 
 This project is licensed under the MIT License - see the LICENSE file for details
 
