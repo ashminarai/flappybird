@@ -68,11 +68,15 @@ function App() {
   }, [isStart, birdpos, objHeight, objPos]);
 
   // Click handler to start game or flap bird
+  // const handler = () => {
+  //   if (!isStart) setIsStart(true);
+  //   else if (birdpos < BIRD_HEIGHT) setBirspos(0);
+  //   else setBirspos((birdpos) => birdpos - 50);
+  // };
   const handler = () => {
-    if (!isStart) setIsStart(true);
-    else if (birdpos < BIRD_HEIGHT) setBirspos(0);
-    else setBirspos((birdpos) => birdpos - 50);
-  };
+  if (!isStart) setIsStart(true);
+  else setBirspos((birdpos) => birdpos - 50); // Move the bird upwards
+};
 
   return (
     <Home onClick={handler}>
