@@ -14,7 +14,7 @@ const OBJ_GAP = 200;
 function App() {
   // State variables for game control
   const [isStart, setIsStart] = useState(false);
-  const [birdpos, setBirspos] = useState(300);
+  const [birdpos, setBirspos] = useState(100);
   const [objHeight, setObjHeight] = useState(0);
   const [objPos, setObjPos] = useState(WALL_WIDTH);
   const [score, setScore] = useState(0);
