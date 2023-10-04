@@ -15,7 +15,6 @@
 Welcome to the Flappy Bird Game repository! This is a classic remake of the famous Flappy Bird game built using React and styled-components. The game challenges players to control a bird by clicking the screen to avoid pipes and score points.
 
 ## Demo 🎥
-
 ![Flappy Bird Gameplay](/images/gameplay.gif)
 
 You can play the game online [here](flappybird-eight.vercel.app).
