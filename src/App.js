@@ -129,15 +129,36 @@ function App() {
   };
 
   return (
-    <Home>
+    <Home onClick={handler}>
+      {/* <span>Score: {score}</span> */}
       <Background height={WALL_HEIGHT} width={WALL_WIDTH}>
+        {!isStart ? <Startgame>Click To Start</Startgame> : null}
         <Bird
           height={BIRD_HEIGHT}
           width={BIRD_WIDTH}
           top={birdposition}
           left={100}
         />
-        <Startgame onClick={handler}>Click to start</Startgame>
+        {/* <Obj
+          height={objHeight}
+          width={OBJ_WIDTH}
+          left={objPos}
+          top={0}
+          deg={180}
+        />
+        <Bird
+          height={BIRD_HEIGHT}
+          width={BIRD_WIDTH}
+          top={birdpos}
+          left={100}
+        />
+        <Obj
+          height={WALL_HEIGHT - OBJ_GAP - objHeight}
+          width={OBJ_WIDTH}
+          left={objPos}
+          top={WALL_HEIGHT - (objHeight + (WALL_HEIGHT - OBJ_GAP - objHeight))}
+          deg={0}
+        /> */}
       </Background>
     </Home>
   );
