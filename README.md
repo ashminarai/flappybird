@@ -3,7 +3,7 @@
 ## Table of Contents 📚
 
 - [Introduction](#introduction)
-- [Demo](#demo)
+- [How to play](#howtoplay)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
