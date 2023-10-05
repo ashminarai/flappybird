@@ -18,13 +18,12 @@ Welcome to the Flappy Bird Game repository! This is a classic remake of the famo
 
 Playing Flappy Bird is easy, but mastering it can be challenging. Follow these simple instructions to get started:
 
-Start the Game: Click anywhere on the game screen to start the game.
-Control the Bird: Your objective is to keep the bird flying. Click the screen to make the bird flap its wings. Each click gives the bird a little boost.
-Avoid Pipes: Navigate the bird through openings in the pipes. Colliding with a pipe or the ground ends the game.
-Score Points: Successfully passing through gaps between pipes earns you points. Try to beat your high score!
-Game Over: When the game ends (after hitting a pipe or the ground), you'll see a game over screen displaying your final score.
-Restart: Click anywhere on the game over screen to start a new game and improve your skills.
-Features 🌟
+- Start the Game: Click anywhere on the game screen to start the game.
+- Control the Bird: Your objective is to keep the bird flying. Click the screen to make the bird flap its wings. Each click gives the bird a little boost.
+- Avoid Pipes: Navigate the bird through openings in the pipes. Colliding with a pipe or the ground ends the game.
+- Score Points: Successfully passing through gaps between pipes earns you points. Try to beat your high score!
+- Game Over: When the game ends (after hitting a pipe or the ground), you'll see a game over screen displaying your final score.
+- Restart: Click anywhere on the game over screen to start a new game and improve your skills.
 
 ## Features 🌟
 
